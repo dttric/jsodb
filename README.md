@@ -7,7 +7,7 @@ Instalation:
 
 Basic funcs:
 ```py
-import jdb
+from jsodb import jdb
 getkeyval("key") # returns key val
 addkey("key"=val) # adds keys to json
 changekey("key", val) # changes key to new val
