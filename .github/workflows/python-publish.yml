@@ -1,4 +1,4 @@
-name: PyPI release
+name: PyPI Release
 
 on:
   release:
@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
   id-token: write
-
+  
 jobs:
   deploy:
 
@@ -29,4 +29,4 @@ jobs:
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
         user: __token__
-        password: pypi-AgEIcHlwaS5vcmcCJGI2OTNkM2ZiLTdhOGItNGEwNi1hYTljLWM2NmViNjExOGM3YwACDVsxLFsianNvZGIiXV0AAixbMixbImRjZGY3NWIxLWEzYWQtNGI2MC1iMmY1LWQyNDU0NGRkNmViZSJdXQAABiBsdEupuH0RqeQnHPuhbl74I-4j3l8t0XBr6uYndRCvFQ
+        password: ${{ secrets.PYPI_API_TOKEN }}
