@@ -15,10 +15,10 @@ def createjson(filepath):
 		file.write("{}")
 
 def json(func, file):
-    def wrapper(*args, **kwargs):
+	def wrapper(*args, **kwargs):
 		with open(f'{file}') as f:
 			data = json.load(f)
-        func(*args, **kwargs)
-        with open(f'{file}', "w") as f:
+		func(*args, **kwargs)
+		with open(f'{file}', "w") as f:
 			json.dump(data, f)
-    return wrapper
+	return wrapper
