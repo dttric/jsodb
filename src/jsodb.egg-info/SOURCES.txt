@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/jdb.py
+src/jsodb.egg-info/PKG-INFO
+src/jsodb.egg-info/SOURCES.txt
+src/jsodb.egg-info/dependency_links.txt
+src/jsodb.egg-info/top_level.txt
