@@ -14,6 +14,18 @@ def createjson(filepath):
 	with open(f"{filepath}.json", "w") as f:
 		file.write("{}")
 
+def addtokey(key, val):
+	try:
+		data[f'{key}'] += int(val)
+	except TypeError:
+		print("TypeError! Only use int.")
+
+def subfromkey(key, val):
+	try:
+		data[f'{key}'] -= int(val)
+	except TypeError:
+		print("TypeError! Only use int.")
+
 def json(func, file):
 	def wrapper(*args, **kwargs):
 		with open(f'{file}') as f:

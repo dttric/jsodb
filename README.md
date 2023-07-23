@@ -12,6 +12,8 @@ getkeyval("key") # returns key val
 addkey("key"=val) # adds keys to json
 changekey("key", val) # changes key to new val
 createjson("/path/to/file") # new .json file (without decorator)
+addtokey("key", int) # key += int
+subfromkey("key", int) # key -= int
 @json("/path/to/file") # main decorator
 ```
 
