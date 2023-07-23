@@ -9,11 +9,12 @@ Basic funcs:
 ```py
 import jdb
 getkeyval("key") # returns key val
-addkey("key"=val) # adds keys to json
+addkey(key=val) # adds keys to json
 changekey("key", val) # changes key to new val
 createjson("/path/to/file") # new .json file (without decorator)
 addtokey("key", int) # key += int
 subfromkey("key", int) # key -= int
+addmultikey("key", key=val, key2=val2) # new multi key {key: {"key": "val", "key2", "val2"}}
 @json("/path/to/file") # main decorator
 ```
 
